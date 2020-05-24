@@ -102,7 +102,7 @@ if($x > 0){
 }else{
     echo "error 2";
 }
-//success 4
+//success 3
 ```
 ### switch
 
