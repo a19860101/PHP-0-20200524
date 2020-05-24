@@ -36,6 +36,8 @@
         echo "<br>";
         var_dump($x != $y);
         echo "<br>";
+        var_dump($x <> $y);
+        echo "<br>";
         var_dump($x !== $y);
 
         //賦值運算子
@@ -57,9 +59,11 @@
             ||  OR
             !   NOT
         */
-        var_dump($x > 0 && $y < 0);
-        var_dump($x > 0 || $y < 0);
+        var_dump($x > 0 && $y > 0);
+        var_dump($x > 0 || $y > 0);
         var_dump(!isset($x));
+        
+        var_dump($x > 0 xor $y > 0);
         
     ?>
 </body>

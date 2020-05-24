@@ -41,6 +41,7 @@ var_dump($x <= $y); //bool(true)
 var_dump($x == $y); //bool(true)
 var_dump($x === $y);//bool(false)
 var_dump($x != $y); //bool(false)
+var_dump($x <> $y); //bool(false)
 var_dump($x !== $y);//bool(true)
 ```
 ***
@@ -59,7 +60,11 @@ echo $x %= $y; //$x = $x % $y
 * || - OR
 * ! - NOT
 ```php
+$x = 100;
+$y = 30;
 var_dump($x > 0 && $y < 0); //false
 var_dump($x > 0 || $y < 0); //true
 var_dump(!isset($x));       //false
+var_dump($x > 0 xor $y > 0); //false
+//其中一個為真，但不能兩個都為真
 ```
