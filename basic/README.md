@@ -19,29 +19,38 @@ define("常數名稱","值");
 ### 運算子 operator
 #### 算術運算子
 ```php
-    $x = 100;
-    $y = 50;
+$x = 100;
+$y = 50;
 
-    echo $x + $y;//150
-    echo $x - $y;//50
-    echo $x * $y;//5000
-    echo $x / $y;//2
-    echo $x % $y;//餘數0
+echo $x + $y;//150
+echo $x - $y;//50
+echo $x * $y;//5000
+echo $x / $y;//2
+echo $x % $y;//餘數0
 ```
 ***
 #### 比較運算子
 ```php
-    $x = 100;
-    $y = "100";
+$x = 100;
+$y = "100";
 
-    var_dump($x > $y);  //bool(false)
-    var_dump($x < $y);  //bool(false)
-    var_dump($x >= $y); //bool(true)
-    var_dump($x <= $y); //bool(true)
-    var_dump($x == $y); //bool(true)
-    var_dump($x === $y);//bool(false)
-    var_dump($x != $y); //bool(false)
-    var_dump($x !== $y);//bool(true)
+var_dump($x > $y);  //bool(false)
+var_dump($x < $y);  //bool(false)
+var_dump($x >= $y); //bool(true)
+var_dump($x <= $y); //bool(true)
+var_dump($x == $y); //bool(true)
+var_dump($x === $y);//bool(false)
+var_dump($x != $y); //bool(false)
+var_dump($x !== $y);//bool(true)
 ```
 ***
 #### 賦值運算子
+```php
+echo $x = $y;
+echo $x += $y; //$x = $x + $y     
+echo $x -= $y; //$x = $x - $y     
+echo $x *= $y; //$x = $x * $y     
+echo $x /= $y; //$x = $x / $y     
+echo $x %= $y; //$x = $x % $y    
+```
+***
