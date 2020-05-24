@@ -139,3 +139,31 @@ switch(true){
 }
 //正整數
 ```
+## 迴圈 loop
+### for
+```php
+for($i=0;$i<10;$i++){
+    echo $i;
+}
+//0123456789
+```
+### while
+```php
+ $x = 0;
+while($x < 10){
+    $x++;
+    echo $x;
+}
+//12345678910
+```
+
+### do...while
+```php
+$y = 0;
+do {
+    $y++;
+    echo $y;
+}
+while($y < 0)
+//1
+```
