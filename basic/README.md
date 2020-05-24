@@ -54,3 +54,12 @@ echo $x /= $y; //$x = $x / $y
 echo $x %= $y; //$x = $x % $y    
 ```
 ***
+####  邏輯運算子
+* && - AND
+* || - OR
+* ! - NOT
+```php
+var_dump($x > 0 && $y < 0); //false
+var_dump($x > 0 || $y < 0); //true
+var_dump(!isset($x));       //false
+```

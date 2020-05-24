@@ -39,18 +39,28 @@
         var_dump($x !== $y);
 
         //賦值運算子
-        echo $x = $y;
-        echo "<br>";
-        echo $x += $y; //$x = $x + $y     
-        echo "<br>";
-        echo $x -= $y; //$x = $x - $y     
-        echo "<br>";
-        echo $x *= $y; //$x = $x * $y     
-        echo "<br>";
-        echo $x /= $y; //$x = $x / $y     
-        echo "<br>";
-        echo $x %= $y; //$x = $x % $y     
+        // echo $x = $y;
+        // echo "<br>";
+        // echo $x += $y; //$x = $x + $y     
+        // echo "<br>";
+        // echo $x -= $y; //$x = $x - $y     
+        // echo "<br>";
+        // echo $x *= $y; //$x = $x * $y     
+        // echo "<br>";
+        // echo $x /= $y; //$x = $x / $y     
+        // echo "<br>";
+        // echo $x %= $y; //$x = $x % $y     
 
+        //邏輯運算子
+        /* 
+            &&  AND
+            ||  OR
+            !   NOT
+        */
+        var_dump($x > 0 && $y < 0);
+        var_dump($x > 0 || $y < 0);
+        var_dump(!isset($x));
+        
     ?>
 </body>
 </html>
