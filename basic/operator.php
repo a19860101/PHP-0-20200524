@@ -59,11 +59,27 @@
             ||  OR
             !   NOT
         */
+        echo "<h2>邏輯運算子</h2>";
         var_dump($x > 0 && $y > 0);
+        echo "<br>";
         var_dump($x > 0 || $y > 0);
+        echo "<br>";
         var_dump(!isset($x));
+        echo "<br>";
         
         var_dump($x > 0 xor $y > 0);
+        echo "<br>";
+
+        //字串運算子
+        $s = "John";
+        echo "hello ".$s;
+        echo "<br>";
+        echo "hello $s";
+        echo "<br>";
+        echo 'hello '.$s;
+        echo "<br>";
+        echo "hello {$s}";
+        echo "<br>";
         
     ?>
 </body>

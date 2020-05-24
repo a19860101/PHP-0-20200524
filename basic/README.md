@@ -68,3 +68,12 @@ var_dump(!isset($x));       //false
 var_dump($x > 0 xor $y > 0); //false
 //其中一個為真，但不能兩個都為真
 ```
+
+#### 字串運算子
+```php
+$s = "John";
+echo "hello ".$s;
+echo "hello $s";
+echo 'hello '.$s;
+echo "hello {$s}";
+```
