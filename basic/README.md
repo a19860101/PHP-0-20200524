@@ -167,3 +167,31 @@ do {
 while($y < 0)
 //1
 ```
+
+## 陣列 Array
+### 定義陣列
+```php
+# 第一種方法
+$a = array();
+$a[0] = "HTML";
+$a[1] = "CSS";
+$a[2] = "JAVASCRIPT";
+
+# 第二種方法
+$a = array("HTML","CSS","JAVASCRIPT");
+
+# 第三種方法
+$a = ["HTML","CSS","JAVASCRIPT"];
+```
+
+### 迭代陣列
+```php
+//for迴圈
+for($i=0;$i<count($a);$i++){
+    echo $a[$i];
+}
+//foreach迴圈
+foreach($a as $item){
+    echo $item;
+}
+```
