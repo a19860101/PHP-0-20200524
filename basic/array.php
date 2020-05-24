@@ -32,6 +32,10 @@
         // sort($datas);
         // rsort($datas);
         // shuffle($datas);
+            $x = 0;
+        var_dump(in_array("HTML",$datas));
+        var_dump(is_array($x));
+
         foreach($datas as $data){
             echo $data;
             echo "<br>";

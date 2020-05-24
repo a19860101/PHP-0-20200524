@@ -205,3 +205,22 @@ foreach($a as $item){
 * krsort()
 * asort()
 * arsort()
+
+### 陣列方法
+#### in_array()
+```php
+$datas = ["HTML","CSS","JAVASCRIPT","PHP","MYSQL"];
+var_dump(in_array("HTML",$datas));
+//bool(true)
+var_dump(in_array("123",$datas));
+//bool(false)
+```
+#### is_array()
+```php
+$datas = ["HTML","CSS","JAVASCRIPT","PHP","MYSQL"];
+$x = 0;
+var_dump(is_array($datas));
+//bool(true)
+var_dump(is_array($x));
+//bool(false)
+```
