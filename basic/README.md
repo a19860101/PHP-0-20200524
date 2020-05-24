@@ -125,4 +125,17 @@ switch($x){
         echo "error";
 }
 // 2
+
+//比對範圍
+switch(true){
+    case $x > 0:
+        echo "正整數";
+        break;
+    case $x < 0:
+        echo "負整數";
+        break;
+    default:
+        echo "error";
+}
+//正整數
 ```
