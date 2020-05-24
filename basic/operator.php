@@ -81,6 +81,9 @@
         echo "hello {$s}";
         echo "<br>";
         
+        //三元運算子
+        // $x = 1;
+        echo $x < 0 ? "success" : "error" ;
     ?>
 </body>
 </html>
