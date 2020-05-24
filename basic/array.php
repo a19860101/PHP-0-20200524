@@ -15,17 +15,44 @@
         // $a = array("HTML","CSS","JAVASCRIPT");
 
         $a = ["HTML","CSS","JAVASCRIPT","PHP","MYSQL"];
+        $datas = ["HTML","CSS","JAVASCRIPT","PHP","MYSQL"];
+
         // var_dump($a);
         // echo $a[0];
         // echo $a[1];
         // echo $a[2];
 
-        echo count($a);
+        // echo count($a);
         //陣列迭代
-        for($i=0;$i<count($a);$i++){
-            echo $a[$i];
+        // for($i=0;$i<count($a);$i++){
+        //     echo $a[$i];
+        //     echo "<br>";
+        // }
+
+        // sort($datas);
+        // rsort($datas);
+        // shuffle($datas);
+        foreach($datas as $data){
+            echo $data;
             echo "<br>";
         }
+
+        $drinks = ["紅茶"=>20,"綠茶"=>20,"珍珠奶茶"=>50,"奶茶"=>30];
+
+        // ksort($drinks);
+        // asort($drinks);
+        // krsort($drinks);
+        // arsort($drinks);
+
+
+        foreach($drinks as $drink=>$price){
+            echo $drink;
+            echo $price;
+            echo  "<br>";
+        }
+        // foreach($drinks as $key => $value){
+        //     echo $key,$value;
+        // }
     ?>
 </body>
 </html>

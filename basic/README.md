@@ -195,3 +195,13 @@ foreach($a as $item){
     echo $item;
 }
 ```
+
+### 排序陣列
+
+* sort()
+* rsort()
+* shuffle()
+* ksort()
+* krsort()
+* asort()
+* arsort()

@@ -27,6 +27,8 @@
             echo $y;
         }
         while($y < 0)
+
+        //foreach -> 陣列
     ?>
 </body>
 </html>
