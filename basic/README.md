@@ -271,4 +271,13 @@ echo $user_info["mail"];
 echo $user_info["age"];
 echo $user_info["gender"];
 ```
+#### implode()
+陣列轉字串
+```php
+$a = ["HTML","CSS","JAVASCRIPT"];
+$a_str = implode(",",$a);
+// HTML,CSS,JAVASCRIPT
+$a_str_2 = implode("__",$a);
+// HTML__CSS__JAVASCRIPT
+```
 

@@ -92,6 +92,17 @@
         echo $user_info["age"];
         echo $user_info["gender"];
 
+        echo "<br>";
+
+        # implode 集中 陣列->字串
+        $a_str = implode("__",$a);
+        echo $a_str;
+        echo "<br>";
+        # explode 爆炸 字串->陣列
+        $str = "潘武雄_轟兩分砲_獅隊1萬4000打點_創中職第一";
+        $str_array = explode("_",$str);
+        var_dump($str_array);
+
     ?>
 </body>
 </html>
