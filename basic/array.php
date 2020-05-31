@@ -57,6 +57,41 @@
         // foreach($drinks as $key => $value){
         //     echo $key,$value;
         // }
+
+
+        // array_push($a,"test","test2");
+        // array_pop($a);
+        // array_unshift($a,"test");
+        // array_shift($a);
+        // $a[count($a)] = "TEST123";
+        // $a[count($a)] = "TEST456";
+
+        
+        foreach($a as $item){
+            echo $item;
+        }
+        echo "<br>";
+
+
+        $user = "john";
+        $mail = "john@gmail.com";
+        $age = "23";
+        $gender = "male";
+
+        // $user_info = array();
+        // array_push($user_info,$user,$mail,$age,$gender);
+
+        // var_dump($user_info);
+        // echo $user_info[1];  
+        
+        $user_info = compact("user","mail","age","gender");
+        var_dump($user_info);
+
+        echo $user_info["user"];
+        echo $user_info["mail"];
+        echo $user_info["age"];
+        echo $user_info["gender"];
+
     ?>
 </body>
 </html>

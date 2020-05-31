@@ -224,3 +224,51 @@ var_dump(is_array($datas));
 var_dump(is_array($x));
 //bool(false)
 ```
+
+#### array_push()
+新增一個值到陣列最後
+```php
+$a = ["HTML","CSS","JAVASCRIPT"];
+array_push($a,"ASP.NET","SQL SERVER","VUE","REACT");
+
+#也可以使用count()方法來新增
+$a[count($a)] = "PHP";
+```
+#### array_pop()
+移除最後一個陣列值
+```php
+array_pop($a);
+```
+#### array_unshift()
+新增一個值到陣列最前方
+```php
+array_unshift($a,"QQQ");
+```
+#### array_shift()
+移除第一個陣列值
+```php
+array_shift($a);
+```
+
+#### compact()
+```php
+$user = "john";
+$mail = "john@gmail.com";
+$age = "23";
+$gender = "male";
+
+// $user_info = array();
+// array_push($user_info,$user,$mail,$age,$gender);
+
+// var_dump($user_info);
+// echo $user_info[1];  
+
+$user_info = compact("user","mail","age","gender");
+var_dump($user_info);
+
+echo $user_info["user"];
+echo $user_info["mail"];
+echo $user_info["age"];
+echo $user_info["gender"];
+```
+
