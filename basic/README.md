@@ -280,4 +280,42 @@ $a_str = implode(",",$a);
 $a_str_2 = implode("__",$a);
 // HTML__CSS__JAVASCRIPT
 ```
+### 字串方法
+#### substr(),mb_substr()
+擷取部分字串
+```php
+$str = "統一獅隊今晚在台南棒球場1329人的見證下，潘武雄在八局下代打轟出的右外野兩分砲，達成隊史第1萬4000分打點的里程碑，連第1萬4001分打點也一起進帳。"
+echo substr($str,0,9);
+# substr(字串,起始位置,長度)
+# substr的三個字元長度為一個繁體中文字，在繁體中文中不建議使用。
+
+echo mb_substr($str,0,10,"utf8");
+# mb_substr(字串,起始位置,長度,編碼)
+```
+#### nl2br()
+自動換行 
+#### md5(),sha1()
+md5與sha1加密
+```php
+$pw = "hello";
+echo md5($pw);
+echo sha1($pw);
+```
+#### crypt()
+crypt加密
+```php
+$pw = "hello";
+echo crypt($pw,"sr");
+```
+#### strip_tags()
+移除HTML標籤
+```php
+$s = "<h1>哈囉你好嗎?</h1>";
+echo strip_tags($s);
+```
+
+### 補充網站
+* [Array Method(W3 School)](https://www.w3schools.com/php/php_ref_array.asp)
+* [Array Method(PHP Official)](https://www.php.net/manual/en/ref.array.php)
+* [亂數甲文 LIPSUM](https://www.lipsum.com/)
 
