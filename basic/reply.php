@@ -10,7 +10,7 @@
     // echo "<br>";
     // echo $_GET["mail"];
 
-    var_dump($_REQUEST);
+    // var_dump($_REQUEST);
     echo $_REQUEST["user"];
     echo "<br>";
     echo $_REQUEST["mail"];
@@ -24,3 +24,5 @@
     //     echo $skill;
     // }
     echo implode(",",$_REQUEST["skills"]);
+    echo "<br>";
+    echo nl2br($_REQUEST["comment"]);

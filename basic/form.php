@@ -39,6 +39,10 @@
             <input type="checkbox" name="skills[]" value="網頁設計">網頁設計
             <input type="checkbox" name="skills[]" value="室內設計">室內設計
         </div>
+        <div>
+            <label>評論</label>
+            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+        </div>
         <input type="submit">
     </form>
     <h2>GET</h2>
