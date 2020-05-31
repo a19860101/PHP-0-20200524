@@ -19,7 +19,7 @@
     // echo "<br>";
     // echo crypt($pw,"qwert");
 
-    $s = "<h1>哈囉你好</h1>";
+    // $s = "<h1>哈囉你好</h1>";
     // echo $s;
     // echo mb_substr($s,0,3,"utf-8");
-    echo mb_substr(strip_tags($s),0,3,"utf-8");
+    // echo mb_substr(strip_tags($s),0,3,"utf-8");

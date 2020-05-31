@@ -12,7 +12,7 @@
 3. 浮點數 float
 4. 布林 boolean
 
-## 常數
+## 常數 constant variable
 ```php
 define("常數名稱","值");
 ```
@@ -280,6 +280,7 @@ $a_str = implode(",",$a);
 $a_str_2 = implode("__",$a);
 // HTML__CSS__JAVASCRIPT
 ```
+## 字串 String
 ### 字串方法
 #### substr(),mb_substr()
 擷取部分字串
@@ -313,9 +314,36 @@ echo crypt($pw,"sr");
 $s = "<h1>哈囉你好嗎?</h1>";
 echo strip_tags($s);
 ```
+## function 函式
+```php
+function test(){
+    echo "hello test";
+}
+test();
+//hello test
+function test(){
+    return "hello return";
+}
+echo test();
+// hello return
+function q($x,$y){
+    return $x + $y;
+}
+echo q(10,4);
+//14
+function qq($x=100,$y=1000){
+    return $x + $y;
+}
+echo qq();
+//1100
+echo qq(3,4);
+//7
 
-### 補充網站
+```
+## 補充網站
 * [Array Method(W3 School)](https://www.w3schools.com/php/php_ref_array.asp)
 * [Array Method(PHP Official)](https://www.php.net/manual/en/ref.array.php)
 * [亂數甲文 LIPSUM](https://www.lipsum.com/)
+* [String Method(W3 School)](https://www.w3schools.com/php/php_ref_string.asp)
+* [String Method(PHP Official)](https://www.php.net/manual/en/ref.strings.php)
 
