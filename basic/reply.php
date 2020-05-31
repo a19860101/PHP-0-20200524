@@ -16,3 +16,11 @@
     echo $_REQUEST["mail"];
     echo "<br>";
     echo $_REQUEST["gender"];
+    echo "<br>";
+    echo $_REQUEST["edu"];
+    echo "<br>";
+    // var_dump($_REQUEST["skills"]);
+    // foreach($_REQUEST["skills"] as $skill){
+    //     echo $skill;
+    // }
+    echo implode(",",$_REQUEST["skills"]);

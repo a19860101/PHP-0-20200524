@@ -357,14 +357,14 @@ require_once("xxx.php");
 
 ## 資料傳遞
 ### post
-* 傳送的值藉由POST請求HTTP發送，且POST的請求不會被Cache紀錄、POST的請求對資料長度沒有限制，因此POST比GET更安全，所以較適合用來傳送隱密性較高的資料
+* 傳送的值由POST請求HTTP發送，且POST的請求不會被Cache紀錄、POST的請求對資料長度沒有限制，因此POST比GET更安全，所以較適合用來傳送隱密性較高的資料
 * 透過$_POST接收
 ### get
-傳送的值藉由GET請求URL發送，簡單來說GET是把資料放在header進行傳送，而在網址列會看到"http://www.xxx.com/test/index.php?test1=value1&test2=value2"
-同時，使用GET方式傳遞的話，並不適合傳送些隱密性較高的資料(例如：Password)，因為在傳送的過程中就會顯示在網址列上
-而GET的請求會被Cache紀錄、GET的請求受限於 QueryString 長度限制(依瀏覽器規定)，因此GET的使用時機應為檢視資料時使用
+* 傳送的值由GET請求URL發送，在網址列會看到"http://www.xxx.com/test/index.php?test1=value1&test2=value2"
+使用GET傳遞並不適合傳送些隱密性較高的資料，而GET的請求會被Cache紀錄、GET的請求受限於 QueryString 長度限制(依瀏覽器規定)，因此GET的使用時機應為檢視資料時使用
 * 透過$_GET接收
-
+### 表單處理
+請參考影片
 ## 補充網站
 * [Array Method(W3 School)](https://www.w3schools.com/php/php_ref_array.asp)
 * [Array Method(PHP Official)](https://www.php.net/manual/en/ref.array.php)
