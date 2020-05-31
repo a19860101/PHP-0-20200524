@@ -365,6 +365,11 @@ require_once("xxx.php");
 * 透過$_GET接收
 ### 表單處理
 請參考影片
+### 檔案上傳
+請參考影片
+#### uniqid()
+#### $_FILES
+接收上傳檔案的資料。
 ## 補充網站
 * [Array Method(W3 School)](https://www.w3schools.com/php/php_ref_array.asp)
 * [Array Method(PHP Official)](https://www.php.net/manual/en/ref.array.php)
