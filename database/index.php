@@ -1,4 +1,10 @@
+<?php
+    require_once("conn.php");
+    $sql = "SELECT * FROM students";
+    $result = mysqli_query($conn,$sql);
+    $row = mysqli_fetch_assoc($result);
+    var_dump($row);
+?>
 <?php include("template/header.php");?>
-<h1>首頁
-</h1>
+
 <?php include("template/footer.php");?>
