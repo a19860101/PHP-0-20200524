@@ -370,6 +370,14 @@ require_once("xxx.php");
 #### uniqid()
 #### $_FILES
 接收上傳檔案的資料。
+#### glob()
+抓取資料，回傳值為Array。
+```php
+glob("images/*");
+//抓取所有images內的檔案
+glob("images/*.jpg");
+//抓取images內的jpg檔案
+```
 ## 補充網站
 * [Array Method(W3 School)](https://www.w3schools.com/php/php_ref_array.asp)
 * [Array Method(PHP Official)](https://www.php.net/manual/en/ref.array.php)
