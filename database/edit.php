@@ -34,6 +34,7 @@
                     <label for="female" class="form-check-label">女</label>
                 </div>
                 </div>
+                <input type="hidden" value="<?php echo $row["id"];?>" name="id">
                 <input type="submit" value="確認修改" class="btn btn-primary">
             </form>
         </div>
