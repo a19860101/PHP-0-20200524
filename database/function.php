@@ -10,9 +10,9 @@
         $row = mysqli_fetch_assoc($result);
         return $row;
     }
-    function showAll(){}
-    function store(){}
-    function edit(){}
-    function delete(){}
-    function update(){}
+    // function showAll(){}
+    // function store(){}
+    // function edit(){}
+    // function delete(){}
+    // function update(){}
 

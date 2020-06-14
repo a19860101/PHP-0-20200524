@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+        echo $_SESSION["USER"];
         echo "HELLO PHP!!";
         echo 'HELLO PHPPPPPPPP!';
         echo "<h1>title</h1>";
