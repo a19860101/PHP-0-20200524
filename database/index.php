@@ -21,9 +21,6 @@
                 <tr>
                     <th>#</th>
                     <th>姓名</th>
-                    <th>電話</th>
-                    <th>Mail</th>
-                    <th>性別</th>
                     <th>建立時間</th>
                     <th>動作</th>
                 </tr>
@@ -31,9 +28,6 @@
                 <tr>
                     <td><?php echo $row["id"];?></td>
                     <td><?php echo $row["name"];?></td>
-                    <td><?php echo $row["phone"];?></td>
-                    <td><?php echo $row["mail"];?></td>
-                    <td><?php echo $row["gender"];?></td>   
                     <td><?php echo $row["create_at"];?></td>
                     <td>
                         <form action="delete.php" method="post">
@@ -42,6 +36,7 @@
                         </form>
                         <!-- <a href="delete.php?id=<?php #echo $row["id"];?>">刪除</a> -->
                         <a href="edit.php?id=<?php echo $row["id"];?>" class="btn btn-success btn-sm">編輯</a>
+                        <a href="detail.php?id=<?php echo $row["id"];?>" class="btn btn-primary  btn-sm">檢視</a>
                     </td>
                 </tr>
             <?php } ?>

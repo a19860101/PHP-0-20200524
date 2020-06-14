@@ -1,9 +1,11 @@
 <?php
     require_once("conn.php");
+    require_once("function.php");
     $id = $_GET["id"];
-    $sql = "SELECT * FROM students WHERE id = {$id}";
-    $result = mysqli_query($conn,$sql);
-    $row = mysqli_fetch_assoc($result);
+    // $sql = "SELECT * FROM students WHERE id = {$id}";
+    // $result = mysqli_query($conn,$sql);
+    // $row = mysqli_fetch_assoc($result);
+    $row = showData($id);
 ?>
 <?php include("template/header.php");?>
 <?php include("template/nav.php");?>
