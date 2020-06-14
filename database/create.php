@@ -1,7 +1,7 @@
 <?php include("template/header.php");?>
 <?php include("template/nav.php");?>
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-10">
             <form action="store.php" method="post">
                 <div class="form-group">
@@ -27,7 +27,7 @@
                     <label for="female" class="form-check-label">女</label>
                 </div>
                 </div>
-                <input type="submit" value="送出" class="btn btn-primary btn-sm">
+                <input type="submit" value="送出" class="btn btn-primary">
             </form>
         </div>
     </div>
