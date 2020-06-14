@@ -41,6 +41,7 @@
                             <input type="submit" value="刪除" class="btn btn-danger btn-sm" onclick="return confirm('確認刪除?')">
                         </form>
                         <!-- <a href="delete.php?id=<?php #echo $row["id"];?>">刪除</a> -->
+                        <a href="edit.php?id=<?php echo $row["id"];?>">編輯</a>
                     </td>
                 </tr>
             <?php } ?>
