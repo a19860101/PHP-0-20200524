@@ -3,23 +3,18 @@
         require_once("pdo.php");
         $sql = "SELECT * FROM students";
         $stmt = $pdo->prepare($sql);
-        $result = $stmt->fetch();
-        var_dump($result);
+        $stmt->execute();
+        $rows = array();
+        while($row = $stmt->fetch()){
+            $rows[] = $row;
+            var_dump($rows);
+        }
     }catch(PDOException $e){
         echo $e->getMessage();
     }
 ?>
 <?php include("template/header.php");?>
 <?php include("template/nav.php");?>
-<?php
-    // echo "<ul>";
-    // while($row=mysqli_fetch_assoc($result)){
-    //     // var_dump($row);
-    //     echo "<li>{$row['name']}</li>";
-        
-    // }
-    // echo "</ul>";
-?>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-10">
