@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <?php 
+            if($_SESSION){
+                echo $_SESSION["USER"]."你好";
+            }else{
+                echo "訪客你好";
+            }
+        ?>
+           
+    </div>
     <nav>
     <?php if($_SESSION) { ?>
         <a href="logout.php?q=true">登出</a>
