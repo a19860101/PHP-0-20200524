@@ -9,6 +9,9 @@
 
     if($row["pw"] === $pw){ 
         echo "您已登入";
+        $_SESSION["ID"] = $row["id"];
+        $_SESSION["USER"] = $row["user"];
+        $_SESSION["LEVEL"] = $row["level"];
     }else{
         echo "滾";
     }
