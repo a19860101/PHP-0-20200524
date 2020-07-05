@@ -35,4 +35,13 @@
                 echo $e->getMessage();
             }
         }
+        function delete($id){
+            try {
+                $sql = "DELETE FROM students WHERE id = ?";
+                $stmt = $this->connect()->prepare($sql);
+                $stmt->execute([$id]);
+            }catch(PDOException $e){
+                echo $e->getMessage();
+            }
+        }
     }
