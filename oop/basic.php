@@ -2,8 +2,8 @@
     class Phone {
         public $a=100;
         public $b = 60;
-        // protected $b;
         private $c = 999;
+        protected $d = 666;
 
         function go(){
            return $this->a + $this->b;
@@ -16,8 +16,24 @@
             return $x;
         }
     }
+    //繼承
+    class Pad extends Phone {
+        function test(){
+            return $this->d;
+        }
+    }
     //建立實體
-    echo  Phone::move();
+    // echo Pad::move();
+    $iphone = new Phone;
+    $ipad = new Pad;
+
+    // echo $iphone->gogogo();
+    echo $ipad->test();
+
+
+
+
+    // echo  Phone::move();
     // $iphone = new Phone;
     // echo $iphone->gogogo();
     // echo $iphone->move();
