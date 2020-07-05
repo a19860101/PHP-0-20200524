@@ -44,4 +44,20 @@
                 echo $e->getMessage();
             }
         }
+        function update($name,$mail,$phone,$gender,$id){
+            try{
+                $sql = "UPDATE students 
+                    SET 
+                        name    = ?,
+                        mail    = ?,
+                        phone   = ?,
+                        gender  = ?
+                    WHERE 
+                        id      = ?";
+                $stmt = $this->connect()->prepare($sql);;
+                $stmt->execute([$name,$mail,$phone,$gender,$id]);
+            }catch(PDOException $e){
+                echo $e->getMessage();
+            }
+        }
     }
