@@ -25,4 +25,14 @@
                 echo $e->getMessage();
             }
         }
+        function store($name,$phone,$mail,$gender,$create_at){
+            try{
+                $sql = "INSERT INTO students(name,phone,mail,gender,create_at)VALUES(?,?,?,?,?)";
+                $stmt = $this->connect()->prepare($sql);
+                $stmt->execute([$name,$phone,$mail,$gender,$create_at]);
+                
+            }catch(PDOException $e){
+                echo $e->getMessage();
+            }
+        }
     }

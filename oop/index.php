@@ -12,6 +12,9 @@
     <title>Document</title>
 </head>
 <body>
+<nav>
+    <a href="create.php">新增</a>
+</nav>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-10">
