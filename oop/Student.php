@@ -14,4 +14,15 @@
                 echo $e->getMessage();
             }
         }
+        function show($id){
+            try {
+                $sql = "SELECT * FROM students WHERE id = ?";
+                $stmt = $this->connect()->prepare($sql);
+                $stmt->execute([$id]);
+                $row = $stmt->fetch();
+                return $row;
+            }catch(PDOException $e){
+                echo $e->getMessage();
+            }
+        }
     }
